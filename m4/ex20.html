@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function menuSimples() {
+    let sair = false;
+
+    while (!sair) {
+        let opcao = prompt("Menu:\n1. Ver Algo\n2. Fazer Algo\n3. Sair\nEscolha:");
+
+        switch (opcao) {
+            case '1':
+                alert("Você escolheu Ver Algo.");
+                break;
+            case '2':
+                alert("Você escolheu Fazer Algo.");
+                break;
+            case '3':
+                sair = true;
+                alert("Saindo.");
+                break;
+            default:
+                alert("Opção inválida.");
+        }
+    }
+}
+
+menuSimples();
+</script>
+</html>
