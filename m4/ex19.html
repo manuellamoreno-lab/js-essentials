@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let palavra = prompt("Escreva uma palavra e verei se é um palindromo")
+    
+    let arrayoriginal = palavra.split('')
+    let arrayinvertido = arrayoriginal.reverse()
+    let palavrainvertida = arrayinvertido.join('')
+
+    if(palavra===palavrainvertida){
+        alert(palavra +" é um palindromo")
+    }else{
+        alert(palavra+" não é um palindromo")
+    }
+</script>
+</html>
