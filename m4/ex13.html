@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let nome = prompt("Escolha o nome do objeto:")
+    let obj = nome
+    let carc1 = prompt("Escolha 1° caracteristica desse objeto")
+    let carc2 = prompt("Escolha 2° caracteristica desse objeto")
+    let carc3 = prompt("Escolha 3° caracteristica desse objeto")
+    let valor1 = prompt("Escolha valor da 1° caracteristica desse objeto")
+    let valor2 = prompt("Escolha valor da 2° caracteristica desse objeto")
+    let valor3 = prompt("Escolha valor da 3° caracteristica desse objeto")
+    obj ={
+        [carc1]: valor1,
+        [carc2]: valor2,
+        [carc3]: valor3,
+    }
+    for (let chave in obj){
+        alert(`${chave}: ${obj[chave]}`)
+    }
+</script>
+</html>
